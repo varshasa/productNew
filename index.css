@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* .container{
+    width: 100vw;
+    height: 100vh;
+    display: grid ;
+    grid-template-rows: 0.5fr 2.5fr 3fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+} */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar{
+    flex: 0.5;
+    width: 100vw;
+    background-color: black;
+   
+}
+
+.carousel{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* .product-list{
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column ;
+} */
+
+/* .card{
+    flex:1;
+    background-color: aqua;
+    gap: 3rem;
+} */
+
+
+.image{
+    flex: 2;
+    background-color: aqua;
+    display: flex;
+    min-width: 100vw;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    flex: 1;
+    min-width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  .product-list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+
